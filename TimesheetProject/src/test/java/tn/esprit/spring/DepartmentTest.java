@@ -55,5 +55,7 @@ public class DepartmentTest {
 		List<String> aux = ent.getAllDepartementsNamesByEntreprise(entrepriseId);
 		assertThat(aux).size().isGreaterThan(0);
 	}
+	
+	//FinalTest
 
 }
