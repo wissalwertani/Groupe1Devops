@@ -2,8 +2,7 @@ package tn.esprit.spring.services;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,111 +13,85 @@ import tn.esprit.spring.repository.EntrepriseRepository;
 
 @Service
 public class EntrepriseServiceImpl implements IEntrepriseService {
-
+	
 	@Autowired
     EntrepriseRepository entrepriseRepoistory;
 	@Autowired
-	DepartementRepository deptRepository;
+	DepartementRepository deptRepoistory;
 	
-	private static final Logger l = LogManager.getLogger(EntrepriseServiceImpl.class);
-	
-	List<String> depNames = new ArrayList<>();
-
 	public int ajouterEntreprise(Entreprise entreprise) {
 		entrepriseRepoistory.save(entreprise);
 		return entreprise.getId();
 	}
 
 	public int ajouterDepartement(Departement dep) {
-		try {
-            l.info("Ajout du Departement");
-			l.debug("je vais ajouter un departement : ");
-			Departement departement = deptRepository.save(dep);
-			l.debug("je viens  de finir l'ajout d'un departement :%s", departement);
-			l.info("departement ajouté sans problèmes");
-		} catch (Exception e) {
-			l.error(String.format("Erreur lors de l'ajout d'un departement :%s", e.getMessage()));
-		}
+		deptRepoistory.save(dep);
 		return dep.getId();
 	}
 	
 	public void affecterDepartementAEntreprise(int depId, int entrepriseId) {
-		try {
-			l.info("Affectation du departement a une entreprise :");
-			l.debug("Selection de l'entreprise");
-		    Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).orElse(null);
-		    l.debug(String.format("l'entreprise selectionnée :%s " , entrepriseManagedEntity));
-			l.debug("Selection du departement");
-			Departement depManagedEntity = deptRepository.findById(depId).orElse(null);
-			if(depManagedEntity != null){
-			l.debug("Departement selectionné :%s", depManagedEntity);
-			l.debug("Affecter departement à l'entreprise : ");
-			depManagedEntity.setEntreprise(entrepriseManagedEntity);
-			deptRepository.save(depManagedEntity);
-			l.info("Departement affecté à l'entreprise sans problèmes");
-			}
-			else{
-				l.info("Departement seelctionné n'existe pas");
-			}
-		} catch (Exception e) {
-			l.error("Erreur lors de l'affectation :%s", e.getMessage());
-		}
+		//Le bout Master de cette relation N:1 est departement  
+				//donc il faut rajouter l'entreprise a departement 
+				// ==> c'est l'objet departement(le master) qui va mettre a jour l'association
+				//Rappel : la classe qui contient mappedBy represente le bout Slave
+				//Rappel : Dans une relation oneToMany le mappedBy doit etre du cote one.
+		Optional<Entreprise> entrepriseOpt = entrepriseRepoistory.findById(entrepriseId);
+		Entreprise entreprise = null;
+		if (entrepriseOpt.isPresent())
+			entreprise = entrepriseOpt.get();
+		Optional<Departement> departementOpt = deptRepoistory.findById(depId);
+		Departement departement = null;
+		if (departementOpt.isPresent())
+			departement = departementOpt.get();
+		if (departement != null){		
+		    departement.setEntreprise(entreprise);
+	        deptRepoistory.save(departement);
+	        }
 		
 	}
 	
 	public List<String> getAllDepartementsNamesByEntreprise(int entrepriseId) {
-		try {
-			l.debug("Selection de l'entreprise");
-			Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).orElse(null);
-			l.debug(String.format("l'entreprise selectionnée :%s", entrepriseManagedEntity));
-			if(entrepriseManagedEntity != null){
-			for(Departement dep : entrepriseManagedEntity.getDepartements()){
-				depNames.add(dep.getName());	
-			}
-			}
-			else{
-				l.info("Cette entreprise n'existe pas");
-			}
-		} catch (Exception e) {
-			l.error("Erreur de chargement :%s", e.getMessage());
-		}
+		Optional<Entreprise> entrepriseOpt = entrepriseRepoistory.findById(entrepriseId);
+		Entreprise entreprise = null;
+		if (entrepriseOpt.isPresent())
+			entreprise = entrepriseOpt.get();
+		
+		List<String> depNames = new ArrayList<>();
+		if (entreprise != null)
+		    for(Departement dep : entreprise.getDepartements()){
+		    	depNames.add(dep.getName());
+		    }
 		
 		return depNames;
 	}
 
 	@Transactional
 	public void deleteEntrepriseById(int entrepriseId) {
-		Entreprise entreprise = entrepriseRepoistory.findById(entrepriseId).orElse(null);
-		if(entreprise != null){
-		entrepriseRepoistory.delete(entreprise);	
-		}
-		else{
-			l.info("L'entreprise seelctionnée n'existe pas");
-		}
+		Optional<Entreprise> entrepriseOpt = entrepriseRepoistory.findById(entrepriseId);
+		Entreprise entreprise = null;
+		if (entrepriseOpt.isPresent())
+			entreprise = entrepriseOpt.get();
+		if (entreprise != null)
+		    entrepriseRepoistory.delete(entreprise);	
 	}
 
 	@Transactional
 	public void deleteDepartementById(int depId) {
-		try {
-            l.info("Suppession Departement");
-			l.debug("Selection du departement à supprimer");
-			Departement departementManaged = deptRepository.findById(depId).orElse(null);
-			if(departementManaged != null){
-			l.debug("Supprimer le departement");
-			deptRepository.delete(departementManaged);	
-			l.info("Departement est supprimer sans problèmes");
-			}
-			else{
-				l.info("Le departement selectionné n'existe pas");
-			}
-		} catch (Exception e) {
-			l.error("Erreur lors du suppression :%s", e.getMessage());
-		}
-		
+		Optional<Departement> departementOpt = deptRepoistory.findById(depId);
+		Departement departement = null;
+		if (departementOpt.isPresent())
+			departement = departementOpt.get();
+		if (departement != null)
+			deptRepoistory.delete(departement);		
 	}
 
+
 	public Entreprise getEntrepriseById(int entrepriseId) {
-		return entrepriseRepoistory.findById(entrepriseId).orElse(null);	
+		Optional<Entreprise> entrepriseOpt = entrepriseRepoistory.findById(entrepriseId);
+		Entreprise entreprise = null;
+		if (entrepriseOpt.isPresent())
+			entreprise = entrepriseOpt.get();
+		return entreprise;
 	}
 
 }
