@@ -1,0 +1,402 @@
+2021-11-10 18:07:20.366  INFO 10512 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 10512 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:07:20.381  INFO 10512 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:07:21.740  INFO 10512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:07:21.907  INFO 10512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 6 repository interfaces.
+2021-11-10 18:07:22.578  INFO 10512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$708249d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:07:22.906  INFO 10512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:07:23.102  INFO 10512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:07:23.196  INFO 10512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:07:23.430  INFO 10512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:07:23.430  INFO 10512 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:07:23.664  INFO 10512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:07:24.227  INFO 10512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:07:26.157  INFO 10512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:07:26.657  INFO 10512 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:07:28.307  INFO 10512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:07:28.429  WARN 10512 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:07:29.062  INFO 10512 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 9.259 seconds (JVM running for 10.494)
+2021-11-10 18:07:29.234  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:29.592  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:29.623  INFO 10512 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:07:29.623  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:29.639  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:29.670  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:29.670  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:29.670  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:29.686  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:29.686  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:29.717  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:29.717  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:29.733  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:29.842  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:29.842  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:29.842  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:29.858  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:29.873  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:29.873  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:29.873  INFO 10512 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:07:29.873  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:29.889  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:29.920  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:29.920  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:29.920  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:29.936  INFO 10512 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:29.951  INFO 10512 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:07:29.951  INFO 10512 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:07:29.964  INFO 10512 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:07:29.977  INFO 10512 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:07:46.220  INFO 15492 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 15492 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:07:46.220  INFO 15492 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:07:47.517  INFO 15492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:07:47.686  INFO 15492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 6 repository interfaces.
+2021-11-10 18:07:48.373  INFO 15492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2014e8f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:07:48.748  INFO 15492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:07:48.939  INFO 15492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:07:49.033  INFO 15492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:07:49.236  INFO 15492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:07:49.236  INFO 15492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:07:49.486  INFO 15492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:07:50.064  INFO 15492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:07:51.834  INFO 15492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:07:52.318  INFO 15492 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:07:53.871  INFO 15492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:07:53.978  WARN 15492 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:07:54.821  INFO 15492 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 9.163 seconds (JVM running for 10.516)
+2021-11-10 18:07:54.948  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:55.105  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:55.168  INFO 15492 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:07:55.168  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:55.168  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:55.215  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:55.215  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:55.215  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:55.230  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:55.230  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:55.277  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:55.277  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:55.293  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:55.418  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:55.418  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:55.418  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:55.433  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:55.449  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:55.449  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:55.449  INFO 15492 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:07:55.449  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:07:55.465  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:07:55.496  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:07:55.496  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:07:55.496  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:07:55.511  INFO 15492 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:07:55.545  INFO 15492 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:07:55.553  INFO 15492 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:07:55.558  INFO 15492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:07:55.562  INFO 15492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:18:36.783  INFO 12448 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 12448 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:18:36.786  INFO 12448 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:18:38.569  INFO 12448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:18:38.744  INFO 12448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 6 repository interfaces.
+2021-11-10 18:18:39.572  INFO 12448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7763675f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:18:40.096  INFO 12448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:18:40.330  INFO 12448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:18:40.575  INFO 12448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:18:40.701  INFO 12448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:18:40.705  INFO 12448 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:18:40.989  INFO 12448 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:18:41.623  INFO 12448 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:18:43.708  INFO 12448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:18:44.337  INFO 12448 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:18:46.373  INFO 12448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:18:46.500  WARN 12448 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:18:47.569  INFO 12448 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 11.513 seconds (JVM running for 13.021)
+2021-11-10 18:18:47.912  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:18:48.111  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:18:48.161  INFO 12448 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:18:48.164  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:18:48.170  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:18:48.220  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:18:48.228  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:18:48.229  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:18:48.234  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:18:48.235  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:18:48.284  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:18:48.284  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:18:48.304  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:18:48.487  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:18:48.494  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:18:48.500  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:18:48.507  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:18:48.530  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:18:48.536  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:18:48.536  INFO 12448 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:18:48.536  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:18:48.558  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:18:48.593  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:18:48.604  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:18:48.619  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:18:48.626  INFO 12448 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:18:48.653  INFO 12448 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:18:48.660  INFO 12448 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:18:48.669  INFO 12448 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:18:48.702  INFO 12448 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:21:53.328  INFO 9084 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 9084 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:21:53.330  INFO 9084 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:21:54.676  INFO 9084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:21:54.881  INFO 9084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185ms. Found 6 repository interfaces.
+2021-11-10 18:21:55.753  INFO 9084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54842cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:21:56.251  INFO 9084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:21:56.494  INFO 9084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:21:56.709  INFO 9084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:21:56.819  INFO 9084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:21:56.822  INFO 9084 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:21:57.080  INFO 9084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:21:57.792  INFO 9084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:21:59.679  INFO 9084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:22:00.352  INFO 9084 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:22:02.652  INFO 9084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:22:02.809  WARN 9084 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:22:03.999  INFO 9084 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 11.325 seconds (JVM running for 12.767)
+2021-11-10 18:22:04.291  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:22:04.607  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:22:04.675  INFO 9084 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:22:04.677  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:22:04.685  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:22:04.743  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:22:04.748  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:22:04.748  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:22:04.756  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:22:04.757  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:22:04.837  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:22:04.837  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:22:04.881  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:22:05.065  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:22:05.071  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:22:05.072  INFO 9084 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:22:05.072  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:22:05.085  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:22:05.117  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:22:05.123  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:22:05.130  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:22:05.132  INFO 9084 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:22:05.158  INFO 9084 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:22:05.163  INFO 9084 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:22:05.169  INFO 9084 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:22:05.193  INFO 9084 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:26:50.579  INFO 12352 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 12352 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:26:50.584  INFO 12352 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:26:51.893  INFO 12352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:26:52.106  INFO 12352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193ms. Found 6 repository interfaces.
+2021-11-10 18:26:52.976  INFO 12352 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70cc5e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:26:53.481  INFO 12352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:26:53.749  INFO 12352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:26:53.993  INFO 12352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:26:54.108  INFO 12352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:26:54.112  INFO 12352 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:26:54.394  INFO 12352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:26:55.067  INFO 12352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:26:57.000  INFO 12352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:26:57.678  INFO 12352 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:26:59.648  INFO 12352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:26:59.776  WARN 12352 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:27:00.896  INFO 12352 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 10.99 seconds (JVM running for 12.408)
+2021-11-10 18:27:01.184  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:27:01.399  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:27:01.451  INFO 12352 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:27:01.455  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:27:01.464  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:27:01.520  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:27:01.523  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:27:01.524  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:27:01.556  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:27:01.802  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:27:01.807  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:27:01.807  INFO 12352 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:27:01.807  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:27:01.836  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:27:01.851  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:27:01.860  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:27:01.866  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:27:01.869  INFO 12352 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:27:01.904  INFO 12352 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:27:01.918  INFO 12352 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:27:01.943  INFO 12352 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:27:01.987  INFO 12352 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:28:03.037  INFO 6668 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 6668 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:28:03.039  INFO 6668 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:28:04.541  INFO 6668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:28:04.698  INFO 6668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 6 repository interfaces.
+2021-11-10 18:28:05.498  INFO 6668 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa33c2d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:28:05.977  INFO 6668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:28:06.211  INFO 6668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:28:06.409  INFO 6668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:28:06.528  INFO 6668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:28:06.531  INFO 6668 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:28:06.831  INFO 6668 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:28:07.472  INFO 6668 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:28:09.259  INFO 6668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:28:09.916  INFO 6668 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:28:11.858  INFO 6668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:28:11.993  WARN 6668 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:28:13.100  INFO 6668 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 10.772 seconds (JVM running for 12.304)
+2021-11-10 18:28:13.443  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:28:13.652  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:28:13.704  INFO 6668 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:28:13.707  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:28:13.720  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:28:13.769  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:28:13.776  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:28:13.777  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:28:13.816  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:28:14.012  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:28:14.023  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:28:14.048  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:28:14.052  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:28:14.053  INFO 6668 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:28:14.053  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:28:14.068  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:28:14.099  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:28:14.102  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:28:14.107  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:28:14.111  INFO 6668 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:28:14.142  INFO 6668 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:28:14.149  INFO 6668 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:28:14.155  INFO 6668 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:28:14.180  INFO 6668 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:43:48.241  INFO 6560 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 6560 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:43:48.243  INFO 6560 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:43:49.664  INFO 6560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:43:49.889  INFO 6560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205ms. Found 6 repository interfaces.
+2021-11-10 18:43:50.943  INFO 6560 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7763675f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:43:51.533  INFO 6560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:43:51.776  INFO 6560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:43:52.001  INFO 6560 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:43:52.118  INFO 6560 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:43:52.121  INFO 6560 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:43:52.375  INFO 6560 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:43:53.074  INFO 6560 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:43:54.945  INFO 6560 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:43:55.592  INFO 6560 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:43:57.662  INFO 6560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:43:57.774  WARN 6560 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:43:58.878  INFO 6560 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 11.266 seconds (JVM running for 12.838)
+2021-11-10 18:43:59.225  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:43:59.408  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:43:59.483  INFO 6560 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:43:59.487  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:43:59.495  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:43:59.539  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:43:59.543  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:43:59.544  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:43:59.548  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:43:59.549  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:43:59.592  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:43:59.592  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:43:59.622  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:43:59.817  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:43:59.822  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:43:59.822  INFO 6560 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:43:59.822  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Affectation du departement a une entreprise :
+2021-11-10 18:43:59.840  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement affecté à l'entreprise sans problèmes
+2021-11-10 18:43:59.848  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Ajout du Departement
+2021-11-10 18:43:59.853  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : departement ajouté sans problèmes
+2021-11-10 18:43:59.858  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Suppession Departement
+2021-11-10 18:43:59.864  INFO 6560 --- [main] t.e.s.services.EntrepriseServiceImpl     : Departement est supprimer sans problèmes
+2021-11-10 18:43:59.898  INFO 6560 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:43:59.909  INFO 6560 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:43:59.914  INFO 6560 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:43:59.945  INFO 6560 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:46:57.684  INFO 16356 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 16356 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:46:57.686  INFO 16356 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:46:59.201  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:46:59.346  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 6 repository interfaces.
+2021-11-10 18:47:00.156  INFO 16356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54842cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:47:00.607  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:47:00.845  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:47:00.957  INFO 16356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:47:01.215  INFO 16356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:47:01.219  INFO 16356 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:47:01.500  INFO 16356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:47:02.185  INFO 16356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:47:04.438  INFO 16356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:47:05.111  INFO 16356 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:47:07.075  INFO 16356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:47:07.231  WARN 16356 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:47:08.355  INFO 16356 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 11.316 seconds (JVM running for 12.872)
+2021-11-10 18:47:08.820  INFO 16356 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:47:09.104  INFO 16356 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:47:09.171  INFO 16356 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:47:09.179  INFO 16356 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:47:09.184  INFO 16356 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:47:09.202  INFO 16356 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 18:47:29.312  INFO 12320 --- [main] tn.esprit.spring.DepartmentTestServices  : Starting DepartmentTestServices on DESKTOP-MOTIHBU with PID 12320 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 18:47:29.315  INFO 12320 --- [main] tn.esprit.spring.DepartmentTestServices  : No active profile set, falling back to default profiles: default
+2021-11-10 18:47:30.828  INFO 12320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 18:47:30.979  INFO 12320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 6 repository interfaces.
+2021-11-10 18:47:31.759  INFO 12320 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2014e8f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 18:47:32.195  INFO 12320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 18:47:32.429  INFO 12320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 18:47:32.629  INFO 12320 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 18:47:32.763  INFO 12320 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 18:47:32.766  INFO 12320 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 18:47:33.041  INFO 12320 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 18:47:33.752  INFO 12320 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 18:47:35.839  INFO 12320 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:47:36.501  INFO 12320 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 18:47:38.505  INFO 12320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:47:38.642  WARN 12320 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 18:47:39.689  INFO 12320 --- [main] tn.esprit.spring.DepartmentTestServices  : Started DepartmentTestServices in 11.084 seconds (JVM running for 12.544)
+2021-11-10 18:47:40.189  INFO 12320 --- [main] tn.esprit.spring.DepartmentTestServices  : Entreprise added successfully!
+2021-11-10 18:47:40.543  INFO 12320 --- [main] tn.esprit.spring.DepartmentTestServices  : Departement added successfully to Entreprise 
+2021-11-10 18:47:40.628  INFO 12320 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 18:47:40.634  INFO 12320 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 18:47:40.640  INFO 12320 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 18:47:40.659  INFO 12320 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-10 19:26:11.669  INFO 13160 --- [main] tn.esprit.spring.ContratTests            : Starting ContratTests on DESKTOP-MOTIHBU with PID 13160 (started by MONDHER in C:\Users\MONDHER\git\Groupe1Devops\TimesheetProject)
+2021-11-10 19:26:11.683  INFO 13160 --- [main] tn.esprit.spring.ContratTests            : No active profile set, falling back to default profiles: default
+2021-11-10 19:26:13.303  INFO 13160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-10 19:26:13.458  INFO 13160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 6 repository interfaces.
+2021-11-10 19:26:14.321  INFO 13160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c03540d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 19:26:14.811  INFO 13160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-10 19:26:15.237  INFO 13160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-10 19:26:15.484  INFO 13160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-10 19:26:15.596  INFO 13160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-10 19:26:15.599  INFO 13160 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-10 19:26:15.888  INFO 13160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-10 19:26:16.573  INFO 13160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-10 19:26:19.367  INFO 13160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 19:26:20.213  INFO 13160 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-10 19:26:22.800  INFO 13160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-10 19:26:23.189  WARN 13160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-10 19:26:24.103  INFO 13160 --- [main] tn.esprit.spring.ContratTests            : Started ContratTests in 13.043 seconds (JVM running for 14.599)
+2021-11-10 19:26:24.514  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Suppression de tout les contrats : 
+2021-11-10 19:26:24.593  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Contrats supprimes without errors : 
+2021-11-10 19:26:24.621  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Affectation du contrat a employe : 
+2021-11-10 19:26:24.697 ERROR 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Erreur dans l'affectation du contratjava.util.NoSuchElementException: No value present
+2021-11-10 19:26:24.701  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : suppression d'un contrat : 
+2021-11-10 19:26:24.718 ERROR 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Erreur dans l'affectation du contrat: java.util.NoSuchElementException: No value present
+2021-11-10 19:26:24.722  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : Ajout du contrat
+2021-11-10 19:26:24.864  INFO 13160 --- [main] t.e.spring.services.EmployeServiceImpl   : contrat ajout� without errors : 
+2021-11-10 19:26:25.006  INFO 13160 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-10 19:26:25.010  INFO 13160 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-10 19:26:25.013  INFO 13160 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-10 19:26:25.024  INFO 13160 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
